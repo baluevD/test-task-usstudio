@@ -1,2 +1,2 @@
-# test-task-usstudio
-test task for usstudio
+# Задание
+По адресу http://frontend.usdev.ru/tarif.csv лежит csv файл с таблицей. Необходимо с помощью js(ajax) получить этот файл и вывести таблицу на текущую страницу.
