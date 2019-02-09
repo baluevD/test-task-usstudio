@@ -49,7 +49,7 @@
         url: "http://frontend.usdev.ru/tarif.csv",
         type: 'GET',
         dataType: "text",
-        success: function(data) {
+      }).done(function(data) {
           var employee_data = data.split(/\r?\n|\r/);
           var table_data = '<table class="table table-bordered table-striped">';
           for (var count = 0; count < employee_data.length; count++) {
@@ -70,9 +70,10 @@
           }
           table_data += '</table>';
           $('#table').html(table_data);
-        }
+      }).fail(function() {
+        alert("File could not be downloaded");
       });
-    });
+      });
   </script>
 </body>
 
